@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { auth, handleUserProfile } from './firebase/utils';
 
+
 // layouts
 import MainLayout from './layouts/MainLayout';
 import HomePageLayout from './layouts/HomePageLayout';
@@ -61,7 +62,7 @@ class App extends Component {
               <Homepage />
             </HomePageLayout>
           )} />
-          < Route path='/registration' render={() => (
+          < Route path='/registration' render={() => currentUser ? <Redirect to='/' /> : (
             <MainLayout currentUser={currentUser}>
               <Registration />
             </MainLayout>
