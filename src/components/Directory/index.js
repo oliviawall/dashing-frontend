@@ -1,26 +1,35 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import './styles.scss';
+
 // import JobSeekers from './../../assets/jobSeekers.png';
 // import Employers from './../../assets/employers.png';
 // import Background from './../../assets/redBackground.png';
 
-import './styles.scss';
+// import QRCode from '../QRCodes';
 
 const Directory = props => {
     return (
         <div className='directory'>
+
             <div className='wrap'>
-                <div
-                    className='item'
-                    // style={{
-                    //     backgroundImage: `url(${Background})`
-                    // }}
+                <div className='item'
+                // style={{
+                //     backgroundImage: `url(${Background})`
+                // }}              
                 >
                     <div className='jobSearch'>
-                    <a>
+                        <Link to='/about'>
+                            Why Go Dashing?
+                        </Link>
+                        {/* <a>
                     © Dashing 2020
-           </a>
-           </div>
-                </div>
+           </a> */}
+                        {/* <QRCode /> */}
+                    </div>
+                   
+                    </div>
+              
                 {/* <div className='item'
                     style={{
                         backgroundImage: `url(${Employers})`

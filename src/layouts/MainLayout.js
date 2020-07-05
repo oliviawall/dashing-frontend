@@ -8,7 +8,7 @@ const MainLayout = props => {
         <div>
             <Header {...props} />
             <div className='main'>
-                {props.children}
+                {props.children} 
             </div>
             <Footer />
         </div>
