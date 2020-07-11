@@ -56,12 +56,17 @@ return (
                                 Job Seekers
                         </Link>
                         </li>
-
+                        <li>
+                            <Link to='/contact'>
+                                Contact
+                        </Link>
+                        </li>
                         <li>
                             <Link to='/login'>
                                 Login
                         </Link>
                         </li>
+                     
                     </ul>
                 )}
 

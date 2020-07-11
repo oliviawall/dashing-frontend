@@ -6,9 +6,7 @@ import { checkUserSession } from './redux/User/user.actions';
 // components 
 import AdminToolbar from './components/AdminToolbar';
 
-
 // import Navbar from './components/Navbar';
-
 
 // hoc
 import WithAuth from './hoc/withAuth';
@@ -30,6 +28,7 @@ import Recovery from './pages/Recovery';
 import Dashboard from './pages/Dashboard';
 import Admin from './pages/Admin';
 import './default.scss';
+// import Paypal from './components/PayPal';
 
 const App = props => {
   const dispatch = useDispatch();
@@ -85,6 +84,11 @@ const App = props => {
             <Recovery />
           </MainLayout>
         )} />
+         {/* <Route path='/paypal' render={() => (
+          <MainLayout>
+            <Paypal />
+          </MainLayout>
+        )} /> */}
         <Route path='/dashboard' render={() => (
           <WithAuth>
             <MainLayout>

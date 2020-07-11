@@ -3,8 +3,8 @@ import ToggleButton from '../../components/SideDrawer/ToggleButton';
 // import Drawer from '../../components/SideDrawer/Drawer';
 import { Link } from 'react-router-dom';
 import { SocialMediaIconsReact } from 'social-media-icons-react';
-import './styles.scss';
 import SideDrawer from '../../components/SideDrawer/SideDrawer';
+import './styles.scss';
 
 // import Logo from './../../assets/logo.png';
 
@@ -41,7 +41,9 @@ const Contact = props => {
 
             <main style={{ marginTop: '20px' }}> 
                 <p> Contact Us  </p>
+                
             </main>
+            
         </div>
     </nav>
 </header>
@@ -49,3 +51,30 @@ const Contact = props => {
 }
 
 export default Contact;
+
+// import React from "react";
+// import { useForm } from "react-hook-form";
+
+// export default function App() {
+//   const { register, handleSubmit } = useForm();
+//   const onSubmit = data => console.log(data);
+   
+//   return (
+//       <main>
+//     <div className='formWrap'>
+//      <form onSubmit={handleSubmit(onSubmit)}>
+//       <input name="firstName" ref={register} />
+//       <br/>
+//       <input name="lastName" ref={register} />
+//       <br/>
+//       <select name="user" ref={register}>
+//         <option value="business">Business</option>
+//         <option value="jobSeeker">Job Seeker</option>
+//       </select>
+//       <br/>
+//       <input type="submit" />
+//     </form>
+//     </div>
+//     </main>
+//   );
+// }

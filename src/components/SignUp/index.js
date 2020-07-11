@@ -111,6 +111,7 @@ const Signup = props => {
           />
 
 {/* can't make appear on page */}
+
           {/* <Link to='/paypal'>
            Your subscription
            </Link> */}
