@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './styles.scss';
+import Carousel from '../Carousel';
 
 // import JobSeekers from './../../assets/jobSeekers.png';
 // import Employers from './../../assets/employers.png';
@@ -17,7 +18,8 @@ const Directory = props => {
                 // style={{
                 //     backgroundImage: `url(${Background})`
                 // }}              
-                >
+                > 
+                <Carousel />
                     <div className='jobSearch'>
                         <Link to='/about'>
                             Why Go Dashing?

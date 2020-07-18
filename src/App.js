@@ -54,6 +54,7 @@ const App = props => {
             <Registration />
           </MainLayout>
         )} />
+      
 
         < Route path='/businessregistration' render={() => (
           <MainLayout>
